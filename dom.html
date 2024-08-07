@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body>
+   <!-- <h1 id="head">hello</h1>
+<button onclick="n1()" ondblclick="n2()">change</button> -->
+
+<!-- <img src="off.jpeg" id="img" alt="">
+<button onclick="on()">light On/Off</button> -->
+ <img src="off.jpeg"  id="syska" onclick="changeSt()" alt="">
+<h1>You can turn On And Off Bulb </h1> 
+
+
+<script>
+
+
+
+ function changeSt(){
+    let imgE = document.getElementById('syska')
+
+    if(imgE.src.match("off")){
+        imgE.src = "on.jpeg"
+    }else{
+        imgE.src = "off.jpeg"
+    }
+
+
+ }
+
+
+
+
+let Img = document.getElementById('img')
+
+function on () {
+    if(Img.src.includes("off.jpeg")){
+        Img.src = "on.jpeg"
+    }
+    else{
+        Img.src= "off.jpeg"
+    }
+}
+
+
+
+    // let b = document.getElementById('head')
+
+    // function n1 (){
+    //     head.innerText = " helooe hiii"
+    //     head.style.backgroundColor= "blue"
+    //     head.style.dispaly = "block"
+    // }
+
+    // function n2 (){
+    //     head.textContent = "bye bye"
+    //     head.style.backgroundColor = "red"
+    // }
+</script>
+</body>
+
+</html>
